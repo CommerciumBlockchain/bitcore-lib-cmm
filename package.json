@@ -120,7 +120,7 @@
       "email": "patrick@bitpay.com"
     }
   ],
-  "name": "bitcore-lib-cmm",
+  "name": "@commerciumblockchain/bitcore-lib-cmm",
   "optionalDependencies": {},
   "readme": "ERROR: No README data found!",
   "repository": {
