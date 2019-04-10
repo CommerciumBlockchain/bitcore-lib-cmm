@@ -5,6 +5,7 @@ var bitcore = module.exports;
 // module information
 bitcore.version = 'v' + require('./package.json').version;
 bitcore.versionGuard = function(version) {
+  return
   if (version !== undefined) {
     var message = 'More than one instance of bitcore-lib-cmm found. ' +
       'Please make sure to require bitcore-lib-cmm and check that submodules do' +
@@ -67,5 +68,4 @@ bitcore.deps.elliptic = require('elliptic');
 bitcore.deps._ = require('lodash');
 
 // Internal usage, exposed for testing/advanced tweaking
-bitcore._HDKeyCache = require('./lib/hdkeycache');
 bitcore.Transaction.sighash = require('./lib/transaction/sighash');
